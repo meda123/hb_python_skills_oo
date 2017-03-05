@@ -50,6 +50,28 @@ Part 1: Discussion
 # Parts 2 through 5:
 # Create your classes and class methods
 
+class Student(object):
+
+    def __init__(self, fname, lname address):
+        self.fname = fname 
+        self.lname = lname 
+        self.address = address
+
+    def getFirstName(self):
+        return self.fname
+
+    def getLastName(self):
+        return self.lname 
+
+    def getAddress(self):
+        return self.address    
+
+class Question(object):
 
 
 
+class Exam(Question):
+    def __init__(self, question_s, exam_name):
+        self.question_s = [] 
+        self.exam_name = exam_name 
+       
