@@ -52,26 +52,53 @@ Part 1: Discussion
 
 class Student(object):
 
-    def __init__(self, fname, lname address):
-        self.fname = fname 
-        self.lname = lname 
+    def __init__ (self, first_name, last_name, address):
+        self.first_name =  first_name 
+        self.last_name = last_name 
         self.address = address
 
-    def getFirstName(self):
-        return self.fname
-
-    def getLastName(self):
-        return self.lname 
-
-    def getAddress(self):
-        return self.address    
+    def get_first_name(self):
+        return self.first_name   
 
 class Question(object):
 
+    def __init__ (self,question, correct_answer):
+        self.question = question
+        self.correct_answer = correct_answer 
 
 
-class Exam(Question):
-    def __init__(self, question_s, exam_name):
-        self.question_s = [] 
-        self.exam_name = exam_name 
-       
+class Exam(object):
+    def __init__ (self, questions, name):
+        self.questions = []
+        self.name = name 
+
+
+    def adding_question_correct(self, question, correct_answer):
+        Question.self = question + correct_answer
+        exam.add_questions()
+
+
+question1 = Exam()
+question1 = adding_question_correct('questionisyes', 'answerisyes')
+
+
+
+## Testing with my pets :)        
+
+milo = Student('milo', 'quispe', '208 evans')
+print milo.first_name  # You get milo 
+
+math = Question("are you tired", "yes!!")
+print math.question # You get "are you tired"
+
+# exameee = Exam("you scared?","winter")
+# print exameee.questions #You get "you scared?"
+
+
+
+
+
+
+
+
+
